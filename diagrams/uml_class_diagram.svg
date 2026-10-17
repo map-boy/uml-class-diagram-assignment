@@ -1,0 +1,100 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='864' viewBox='0 0 1080 864' font-family='Arial' font-size='12'><rect width='1080' height='864' fill='white'/>
+<rect x='760' y='40' width='260' height='182' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='760' y='40' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='890' y='58' text-anchor='middle' font-weight='bold' font-size='14'>Hotel</text>
+<text x='768' y='81'>- hotelId: String</text>
+<text x='768' y='101'>- name: String</text>
+<text x='768' y='121'>- address: String</text>
+<text x='768' y='141'>- phone: String</text>
+<line x1='760' y1='154' x2='1020' y2='154' stroke='#333' stroke-width='1.5'/>
+<text x='768' y='173'>+ addRoom(r: Room): void</text>
+<text x='768' y='193'>+ addStaff(s: Staff): void</text>
+<text x='768' y='213'>+ findFreeRooms(d1, d2): List</text>
+<rect x='40' y='50' width='260' height='162' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='40' y='50' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='170' y='68' text-anchor='middle' font-weight='bold' font-size='14'>RoomType</text>
+<text x='48' y='91'>- typeId: String</text>
+<text x='48' y='111'>- typeName: String</text>
+<text x='48' y='131'>- pricePerNight: Decimal</text>
+<text x='48' y='151'>- capacity: int</text>
+<line x1='40' y1='164' x2='300' y2='164' stroke='#333' stroke-width='1.5'/>
+<text x='48' y='183'>+ updatePrice(p: Decimal): void</text>
+<text x='48' y='203'>+ getDetails(): String</text>
+<rect x='400' y='50' width='260' height='162' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='400' y='50' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='530' y='68' text-anchor='middle' font-weight='bold' font-size='14'>Room</text>
+<text x='408' y='91'>- roomId: String</text>
+<text x='408' y='111'>- roomNumber: String</text>
+<text x='408' y='131'>- floor: int</text>
+<text x='408' y='151'>- status: String</text>
+<line x1='400' y1='164' x2='660' y2='164' stroke='#333' stroke-width='1.5'/>
+<text x='408' y='183'>+ isAvailable(d1, d2): bool</text>
+<text x='408' y='203'>+ setStatus(s: String): void</text>
+<rect x='40' y='310' width='260' height='222' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='40' y='310' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='170' y='328' text-anchor='middle' font-weight='bold' font-size='14'>Guest</text>
+<text x='48' y='351'>- guestId: String</text>
+<text x='48' y='371'>- fullName: String</text>
+<text x='48' y='391'>- email: String</text>
+<text x='48' y='411'>- phone: String</text>
+<text x='48' y='431'>- nationalId: String</text>
+<line x1='40' y1='444' x2='300' y2='444' stroke='#333' stroke-width='1.5'/>
+<text x='48' y='463'>+ register(): void</text>
+<text x='48' y='483'>+ updateProfile(): void</text>
+<text x='48' y='503'>+ makeBooking(r: Room): Booking</text>
+<text x='48' y='523'>+ cancelBooking(b: Booking): void</text>
+<rect x='400' y='300' width='260' height='242' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='400' y='300' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='530' y='318' text-anchor='middle' font-weight='bold' font-size='14'>Booking</text>
+<text x='408' y='341'>- bookingId: String</text>
+<text x='408' y='361'>- checkInDate: Date</text>
+<text x='408' y='381'>- checkOutDate: Date</text>
+<text x='408' y='401'>- status: String</text>
+<text x='408' y='421'>- totalAmount: Decimal</text>
+<line x1='400' y1='434' x2='660' y2='434' stroke='#333' stroke-width='1.5'/>
+<text x='408' y='453'>+ confirm(): void</text>
+<text x='408' y='473'>+ cancel(): void</text>
+<text x='408' y='493'>+ calcTotal(): Decimal</text>
+<text x='408' y='513'>+ checkIn(): void</text>
+<text x='408' y='533'>+ checkOut(): void</text>
+<rect x='760' y='330' width='260' height='182' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='760' y='330' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='890' y='348' text-anchor='middle' font-weight='bold' font-size='14'>Staff</text>
+<text x='768' y='371'>- staffId: String</text>
+<text x='768' y='391'>- fullName: String</text>
+<text x='768' y='411'>- role: String</text>
+<text x='768' y='431'>- email: String</text>
+<line x1='760' y1='444' x2='1020' y2='444' stroke='#333' stroke-width='1.5'/>
+<text x='768' y='463'>+ confirmBooking(b: Booking): void</text>
+<text x='768' y='483'>+ checkInGuest(b: Booking): void</text>
+<text x='768' y='503'>+ generateReport(): String</text>
+<rect x='400' y='622' width='260' height='202' fill='#fffbe6' stroke='#333' stroke-width='1.5'/><rect x='400' y='622' width='260' height='26' fill='#dae8fc' stroke='#333' stroke-width='1.5'/><text x='530' y='640' text-anchor='middle' font-weight='bold' font-size='14'>Payment</text>
+<text x='408' y='663'>- paymentId: String</text>
+<text x='408' y='683'>- amount: Decimal</text>
+<text x='408' y='703'>- method: String</text>
+<text x='408' y='723'>- paymentDate: Date</text>
+<text x='408' y='743'>- status: String</text>
+<line x1='400' y1='756' x2='660' y2='756' stroke='#333' stroke-width='1.5'/>
+<text x='408' y='775'>+ process(): bool</text>
+<text x='408' y='795'>+ refund(): void</text>
+<text x='408' y='815'>+ printReceipt(): String</text>
+<line x1='742' y1='131' x2='660' y2='131' stroke='#333' stroke-width='1.5'/>
+<polygon points='760,131 751,125 742,131 751,137' fill='#333' stroke='#333' stroke-width='1.5'/>
+<text x='736' y='123' text-anchor='middle'>1</text>
+<text x='680' y='123' text-anchor='middle'>1..*</text>
+<text x='710' y='123' text-anchor='middle' font-style='italic'>contains</text>
+<line x1='300' y1='131' x2='400' y2='131' stroke='#333' stroke-width='1.5'/>
+<text x='312' y='123' text-anchor='middle'>1</text>
+<text x='380' y='123' text-anchor='middle'>0..*</text>
+<text x='350' y='123' text-anchor='middle' font-style='italic'>classifies</text>
+<line x1='300' y1='421' x2='400' y2='421' stroke='#333' stroke-width='1.5'/>
+<text x='312' y='413' text-anchor='middle'>1</text>
+<text x='380' y='413' text-anchor='middle'>0..*</text>
+<text x='350' y='413' text-anchor='middle' font-style='italic'>makes</text>
+<line x1='530' y1='212' x2='530' y2='300' stroke='#333' stroke-width='1.5'/>
+<text x='542' y='226'>1</text>
+<text x='542' y='290'>0..*</text>
+<text x='542' y='260' font-style='italic'>reserved in</text>
+<line x1='530' y1='560' x2='530' y2='622' stroke='#333' stroke-width='1.5'/>
+<polygon points='530,542 524,551 530,560 536,551' fill='#333' stroke='#333' stroke-width='1.5'/>
+<text x='542' y='568'>1</text>
+<text x='542' y='612'>0..*</text>
+<text x='542' y='586' font-style='italic'>paid by</text>
+<line x1='890' y1='240' x2='890' y2='330' stroke='#333' stroke-width='1.5'/>
+<polygon points='890,222 884,231 890,240 896,231' fill='white' stroke='#333' stroke-width='1.5'/>
+<text x='902' y='248'>1</text>
+<text x='902' y='320'>1..*</text>
+<text x='902' y='280' font-style='italic'>employs</text>
+<line x1='760' y1='421' x2='660' y2='421' stroke='#333' stroke-width='1.5'/>
+<text x='748' y='413' text-anchor='middle'>1</text>
+<text x='680' y='413' text-anchor='middle'>0..*</text>
+<text x='710' y='413' text-anchor='middle' font-style='italic'>manages</text>
+</svg>
