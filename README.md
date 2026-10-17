@@ -1,6 +1,6 @@
 # UML Class Diagram Assignment - Hotel Booking System
 
-**Group:** Mugisha Alain Paisible and GROUP MEMBER 2 NAME
+**Group:** Mugisha Alain Paisible and MUCUNGUZI Felix
 **Institution:** Kigali Independent University (ULK) | **Instructor:** Eric Maniraguha
 
 ## Business Idea
