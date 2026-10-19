@@ -39,3 +39,7 @@ Excluded: online payment gateway, restaurant/spa/event management, payroll. Desi
 - documentation/report_1_project_description.pdf
 - documentation/report_2_uml_class_diagram.pdf
 - diagrams/uml_class_diagram.drawio, .png, .svg
+
+## Interactive Diagram
+- [View the UML class diagram in draw.io](https://viewer.diagrams.net/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=uml_class_diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fmap-boy%2Fuml-class-diagram-assignment%2Fmain%2Fdiagrams%2Fuml_class_diagram.drawio)
+- [Edit in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fmap-boy%2Fuml-class-diagram-assignment%2Fmain%2Fdiagrams%2Fuml_class_diagram.drawio)
